@@ -1,0 +1,31 @@
+
+**DEVELOPMENT NOTES**
+
+JavaScript, style sheets and Bootstrap files were minimized into more manageable files using CodeKit, and saved into the folders within the "_" folder.  CodeKit must be running during development to affect change to minimized files.  Manual compile
+may have to be applied in some cases.
+
+Human readable files are located within the components folder and start with an underscore. "_".
+
+The files were compiled in CodeKit with the following settings.
+
+**Styles**
+1) /_/components/less/_mystyles.less TO /_/css/mystyles.css (note the removal of the underscore)
+	- Do not compile directly is unchecked
+	- Output Style: Compressed (YUI)
+	- Debug Info in CSS: None
+
+2) /_/components/less/_bootstrap.less TO /_/css/bootstrap.css (note the removal of the underscore)
+	- Do not compile directly is unchecked
+	- Output Style: Compressed (YUI)
+	- Debug Info in CSS: None
+
+**Scripts**
+1) /_/components/js/_bootstrap.js TO /_/js/bootstrap.js (note the removal of the underscore)
+	- Do not compile directly is unchecked
+	- Check Syntax With: Nothing
+	- Then: Concatenate + minify
+
+2) /_/components/js/_myscript.js TO /_/js/myscript.js (note the removal of the underscore)
+	- Do not compile directly is unchecked
+	- Check Syntax With: Nothing
+	- Then: Concatenate + minify
